@@ -225,6 +225,7 @@ footer {
   color: white;
   border-color: white;
   margin: 0 auto;
+  width: 250px;
 }
 .btn:hover {
   color: #f5b11d;
