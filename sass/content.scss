@@ -1,0 +1,106 @@
+.content {
+  max-width: 1150px;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border-left: 1px rgba(180, 180, 180) solid;
+  border-right: 1px rgba(180, 180, 180) solid;
+  margin: 0 auto;
+  padding: 45px;
+
+  &__container {
+    width: 45%;
+    min-height: calc(100vh - 120px);
+    border: none;
+    padding: 0;
+  }
+
+  &--flexrow {
+    flex-direction: row;
+  }
+
+  &__heading {
+    font-size: 50px;
+    width: 100%;
+    padding-bottom: 10px;
+    font-family: mont-semibold;
+    border-bottom: 2px #f5b11d solid;
+  }
+  &__description {
+    font-size: 24px;
+    font-family: mont-reg;
+  }
+
+  &__cardcontainer {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__image {
+    width: 100%;
+    min-height: calc(100vh - 120px);
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--home {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)
+        ),
+        url(../images/img_home.jpg);
+    }
+
+    &--about {
+      min-height: 300px;
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)
+        ),
+        url(../images/img_about.jpg);
+    }
+    &--contact {
+      min-height: 450px;
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)
+        ),
+        url(../images/img_map.jpg);
+    }
+    &--apply {
+      min-height: 300px;
+      background-position: 50% 20%;
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)
+        ),
+        url(../images/img_team.jpg);
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .content {
+    flex-direction: column;
+
+    &__container {
+      width: 100%;
+      margin-bottom: 80px;
+    }
+    &__cardcontainer {
+      flex-direction: column;
+    }
+  }
+}

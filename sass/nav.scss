@@ -1,0 +1,20 @@
+.navbar {
+  min-height: 60px;
+  background-color: #fcfcfc;
+  border-bottom: 1px rgba(180, 180, 180) solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  &__links {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: mont-reg;
+    transition: ease 0.3s all;
+  }
+  &__links:hover {
+    color: #f5b11d;
+    transform: scale(1.2);
+  }
+}

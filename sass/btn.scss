@@ -1,0 +1,41 @@
+.btn {
+  font-size: 24px;
+  width: 300px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px auto 0 auto;
+  font-family: mont-reg;
+  transition: ease 0.3s all;
+
+  &--columncard {
+    margin: 0 0 16px 0;
+    font-size: 24px;
+    width: 100%;
+    color: black;
+    border-color: black;
+  }
+
+  &--white {
+    color: white;
+    border-color: white;
+    margin: 0 auto;
+  }
+
+  &--marginbottom {
+  }
+}
+.btn:hover {
+  color: #f5b11d;
+  border-color: #f5b11d;
+  transform: scale(1.2);
+}
+
+@media (max-width: 1050px) {
+  .btn--marginbottom {
+    margin-bottom: 60px;
+  }
+}
