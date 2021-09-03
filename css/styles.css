@@ -212,6 +212,7 @@ footer {
   font-family: mont-reg;
   -webkit-transition: ease 0.3s all;
   transition: ease 0.3s all;
+  text-decoration: none;
 }
 .btn--columncard {
   margin: 0 0 16px 0;
